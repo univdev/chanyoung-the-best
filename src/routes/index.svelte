@@ -1,50 +1,48 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import { Button } from 'spaper';
 </script>
 
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>찬영이를 칭찬해주세요!</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="home">
+	<h1 class="home__title">찬영이를 칭찬해주세요!</h1>
+	<p class="home__description">칭찬이 많이 고픈 아이예요..!</p>
+	<nav class="home__navigation navigation">
+		<Button
+			type="secondary"
+			href="/recommends"
+		>
+			칭찬하러 가기
+		</Button>
+	</nav>
+</div>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<style>
+	.home {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 48px;
+		font-weight: normal;
+		padding: 0 16px;
+	}
+	.home__title {
+		margin: 0 0 16px;
+		text-align: center;
+	}
+	.home__description {
+		font-size: 24px;
+		margin-bottom: 32px;
+		text-align: center;
+	}
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+</style>

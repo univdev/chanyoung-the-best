@@ -1528,6 +1528,11 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
+papercss@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/papercss/-/papercss-1.8.3.tgz#2b1f40727190228496590eb7651a31799ecb6dd9"
+  integrity sha512-dRlaR5Kw6NbuMnHEIPLa6JvGndIE2RZ27ebSfjYXV6XAYEnxOMsNeYGDkmJgXol1A0LexmyP3F6F7+HL0XdGqA==
+
 param-case@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/param-case/-/param-case-2.1.1.tgz#df94fd8cf6531ecf75e6bef9a0858fbc72be2247"
@@ -1754,6 +1759,11 @@ sourcemap-codec@^1.4.4, sourcemap-codec@^1.4.6:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+
+spaper@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/spaper/-/spaper-0.3.6.tgz#da394c65aadb0ba84f0e75e87cb9bc036288c3e3"
+  integrity sha512-D2mCksiLdbIGxfM1cq9OlaRCMqd9Z3AD/Fyy2x1IZsqCahaI4r2v0rFFjgx+tVbCrYB+76jom/BQVXRnxPOYzg==
 
 string-hash@^1.1.3:
   version "1.1.3"
