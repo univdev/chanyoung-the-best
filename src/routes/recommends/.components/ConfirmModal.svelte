@@ -42,3 +42,15 @@
     </div>
   </div>
 </div>
+
+<style>
+  .modal .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  .modal .modal-footer .paper-btn {
+    margin-left: 8px;
+  }
+</style>

@@ -2,6 +2,7 @@
   import Recommend from "./.components/Recommend.svelte";
   import RecommendEditor from './.components/RecommendEditor.svelte';
   import ConfirmModal from './.components/ConfirmModal.svelte';
+  import CompleteModal from './.components/CompleteModal.svelte';
 
   let recommends = [];
   let isVisibleRecommendEditor = false;
@@ -36,7 +37,7 @@
   };
   const handleHideCompleteModal = () => {
     isVisibleCompleteModal = false;
-    handleHideCompleteModal();
+    handleHideConfirmModal();
     handleHideRecommendEditor();
   };
 </script>
@@ -74,6 +75,9 @@
     bind:visible="{isVisibleConfirmModal}"
     on:confirm="{handleAddRecommendation}"
     on:cancel="{handleHideConfirmModal}"/>
+  <CompleteModal
+    bind:visible="{isVisibleCompleteModal}"
+    on:close="{handleHideCompleteModal}"/>
 </div>
 
 <style>
