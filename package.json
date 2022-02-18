@@ -9,6 +9,7 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
+    "canvas-confetti": "^1.5.1",
     "compression": "^1.7.1",
     "firebase": "^9.6.7",
     "moment": "^2.29.1",
