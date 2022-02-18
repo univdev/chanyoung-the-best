@@ -1,10 +1,14 @@
 <script>
+  import { onMount, onDestroy } from 'svelte';
+  import firebase from 'plugins/firebase';
+  import { getFirestore, collection, query, where, orderBy, onSnapshot } from 'firebase/firestore';
   import Recommend from "./.components/Recommend.svelte";
   import RecommendEditor from './.components/RecommendEditor.svelte';
   import ConfirmModal from './.components/ConfirmModal.svelte';
   import CompleteModal from './.components/CompleteModal.svelte';
 
   let recommends = [];
+  let recommendsSubscriber = null;
   let isVisibleRecommendEditor = false;
   let isVisibleConfirmModal = false;
   let isVisibleCompleteModal = false;
@@ -14,6 +18,19 @@
     content: '',
   };
   const recommendEditorId = 'recommend-add-modal';
+  const getRecommendsSubscriber = () => {
+    const db = getFirestore(firebase.app);
+    const col = collection(db, 'recommends');
+    const q = query(
+      col,
+      where('isVisible', '==', true),
+      orderBy('createdAt', 'asc'),
+    );
+    return onSnapshot(q, (snapshot) => {
+      const items = [...snapshot.docs].map((doc) => doc.data());
+      recommends = [...items];
+    });
+  };
   const clearPayload = () => {
     payload.author = '';
     payload.group = '';
@@ -40,6 +57,12 @@
     handleHideConfirmModal();
     handleHideRecommendEditor();
   };
+  onMount(() => {
+    recommendsSubscriber = getRecommendsSubscriber();
+  });
+  onDestroy(() => {
+    if (recommendsSubscriber) recommendsSubscriber();
+  });
 </script>
 
 <svelte:head>
