@@ -1,18 +1,13 @@
 <script>
-  import { Card } from 'spaper';
-
   export let author = '';
   export let belong = '';
   export let content = '';
 </script>
 
 <div class="recommend">
-  <Card
-    title="{ author }"
-    subTitle="{ belong }"
-  >
-    { content }
-  </Card>
+  <div class="card">
+    <h4 class="card-title">{ author }</h4>
+  </div>
 </div>
 
 <style>

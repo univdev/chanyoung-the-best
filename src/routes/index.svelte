@@ -1,5 +1,4 @@
 <script>
-	import { Button } from 'spaper';
 </script>
 
 <svelte:head>
@@ -10,12 +9,11 @@
 	<h1 class="home__title">찬영이를 칭찬해주세요!</h1>
 	<p class="home__description">칭찬이 많이 고픈 아이예요..!</p>
 	<nav class="home__navigation navigation">
-		<Button
-			type="secondary"
-			href="/recommends"
-		>
+		<a
+			class="paper-btn btn-secondary"
+			href="/recommends">
 			칭찬하러 가기
-		</Button>
+		</a>
 	</nav>
 </div>
 
