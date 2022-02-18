@@ -39,7 +39,7 @@
           class="recommend-input recommend-input--author"
           type="text"
           placeholder="이름이 어떻게 되세요?"
-          required="">
+          required>
         <input
           bind:value="{group}"
           class="recommend-input recommend-input--group"
@@ -49,10 +49,11 @@
           bind:value="{content}"
           class="recommend-input recommend-input--content"
           placeholder="박찬영에 대해 느낀점을 작성해주세요!"
-          required=""></textarea>
+          required></textarea>
       </div>
       <div class="modal-footer">
         <button
+          type="submit"
           class="paper-btn modal-footer__button btn-secondary btn-small">
           저장
         </button>

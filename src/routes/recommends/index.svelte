@@ -1,7 +1,8 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
   import firebase from 'plugins/firebase';
-  import { getFirestore, collection, query, where, orderBy, onSnapshot } from 'firebase/firestore';
+  import { getFirestore, collection, query, where, orderBy, onSnapshot, addDoc } from 'firebase/firestore';
+  import moment from 'moment';
   import Recommend from "./.components/Recommend.svelte";
   import RecommendEditor from './.components/RecommendEditor.svelte';
   import ConfirmModal from './.components/ConfirmModal.svelte';
@@ -31,6 +32,21 @@
       recommends = [...items];
     });
   };
+  const addRecommendation = ({ author, group, content }) => {
+    const db = getFirestore(firebase.app);
+    const col = collection(db, 'recommends');
+    const createdAt = moment().toDate();
+    const updatedAt = moment().toDate();
+    const payload = {
+      author,
+      group,
+      content,
+      createdAt,
+      updatedAt,
+      isVisible: false,
+    };
+    return addDoc(col, payload);
+  }
   const clearPayload = () => {
     payload.author = '';
     payload.group = '';
@@ -50,7 +66,12 @@
     isVisibleConfirmModal = false;
   };
   const handleAddRecommendation = () => {
-    isVisibleCompleteModal = true;
+    const recommendation = {
+      ...payload,
+    };
+    addRecommendation(recommendation).then(() => {
+      isVisibleCompleteModal = true;
+    });
   };
   const handleHideCompleteModal = () => {
     isVisibleCompleteModal = false;
