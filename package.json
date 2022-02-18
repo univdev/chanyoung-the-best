@@ -11,6 +11,7 @@
   "dependencies": {
     "compression": "^1.7.1",
     "firebase": "^9.6.7",
+    "moment": "^2.29.1",
     "papercss": "^1.8.3",
     "polka": "next",
     "sirv": "^1.0.0",
