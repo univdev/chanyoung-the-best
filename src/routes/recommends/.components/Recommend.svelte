@@ -1,12 +1,16 @@
 <script>
   export let author = '';
-  export let belong = '';
+  export let group = '';
   export let content = '';
 </script>
 
 <div class="recommend">
   <div class="card">
-    <h4 class="card-title">{ author }</h4>
+    <div class="card-body">
+      <div class="card-title">{ author } 님</div>
+      <div class="card-subtitle">{ group }</div>
+      <div class="card-text">{ content }</div>
+    </div>
   </div>
 </div>
 
