@@ -11,5 +11,6 @@ module.exports = {
   rules: {
     'quotes': ['error', 'single'],
     'object-curly-spacing': 'off',
+    'max-len': 'off',
   },
 };
