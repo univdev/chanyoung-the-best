@@ -1,6 +1,8 @@
 <script>
 	import { onDestroy, onMount } from 'svelte';
 	import Confetti from 'canvas-confetti';
+	import Icon from 'mdi-svelte';
+	import { mdiGithub } from '@mdi/js';
 
 	let particleHandler = null;
 	let confettiCanvas = null;
@@ -66,11 +68,20 @@
 		박찬영과 함께한 그 어떤 경험이라도 괜찮으니<br/>
 		그것으로 인해 긍정적인 느낌을 느끼셨다면 누구나 추천사를 작성하실 수 있습니다!
 	</p>
-	<nav class="home__navigation navigation">
+	<nav class="home__navigations navigations">
 		<a
-			class="paper-btn btn-secondary"
+			class="paper-btn btn-secondary navigations__item"
 			href="/recommends">
-			칭찬하러 가기
+			<span>칭찬하러 가기</span>
+		</a>
+		<a
+			class="paper-btn btn-default navigations__item"
+			href="https://github.com/univdev"
+			target="_blank">
+			<Icon
+				class="navigation-icon"
+				path={mdiGithub} />
+			<span>Github 방문하기</span>
 		</a>
 	</nav>
 </div>
@@ -96,10 +107,22 @@
 		margin-bottom: 32px;
 		text-align: center;
 	}
-	.navigation {
+	.navigations {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	.navigations .navigations__item:first-child {
+		margin-left: 0;
+	}
+	.navigations .navigations__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 8px;
+	}
+	.navigations span {
+		margin-left: 8px;
 	}
 	:global(#ConfettiCanvas) {
 		position: fixed;
