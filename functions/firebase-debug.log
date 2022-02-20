@@ -1421,3 +1421,557 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-02-19T20:31:06.429Z] [worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: IDLE"}}
 [debug] [2022-02-19T20:31:06.429Z] [work-queue] {"queueLength":0,"workRunningCount":0}
 [debug] [2022-02-19T20:31:06.441Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-02-20T04:55:54.098Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T04:55:55.102Z] [worker-pool] Shutting down IDLE worker (us-central1-networkExample) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-networkExample)"}}
+[debug] [2022-02-20T04:55:55.102Z] [worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: FINISHING"}}
+[debug] [2022-02-20T04:55:55.104Z] Validating nodejs source
+[debug] [2022-02-20T04:55:56.574Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T04:55:56.574Z] Building nodejs source
+[debug] [2022-02-20T04:55:56.574Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T04:55:56.586Z] [worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: exited"}}
+[debug] [2022-02-20T04:55:56.586Z] [worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-networkExample-40ceef79-3178-4e48-a331-fa3a76164fe8]: FINISHED"}}
+[debug] [2022-02-20T05:00:52.410Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:00:53.414Z] Validating nodejs source
+[debug] [2022-02-20T05:00:54.862Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:00:54.862Z] Building nodejs source
+[debug] [2022-02-20T05:00:54.862Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:01:16.171Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:01:17.175Z] Validating nodejs source
+[debug] [2022-02-20T05:01:18.547Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:01:18.548Z] Building nodejs source
+[debug] [2022-02-20T05:01:18.548Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:01:24.066Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:01:25.069Z] Validating nodejs source
+[debug] [2022-02-20T05:01:26.429Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:01:26.430Z] Building nodejs source
+[debug] [2022-02-20T05:01:26.430Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:05:33.378Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:05:34.381Z] Validating nodejs source
+[debug] [2022-02-20T05:05:36.485Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:05:36.486Z] Building nodejs source
+[debug] [2022-02-20T05:05:36.486Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:05:36.496Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[info] ✔  functions[us-central1-sms-send]: http function initialized (http://localhost:5001/univdev-recommends/us-central1/sms-send). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/univdev-recommends/us-central1/sms-send)."}}
+[debug] [2022-02-20T05:05:37.498Z] Validating nodejs source
+[debug] [2022-02-20T05:05:38.867Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:05:38.867Z] Building nodejs source
+[debug] [2022-02-20T05:05:38.867Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:13:30.664Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:13:31.669Z] Validating nodejs source
+[debug] [2022-02-20T05:13:33.092Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:13:33.092Z] Building nodejs source
+[debug] [2022-02-20T05:13:33.093Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:13:33.297Z] Definition for trigger sms.send changed from undefined to {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends"} {"metadata":{"emulator":{"name":"functions"},"message":"Definition for trigger sms.send changed from undefined to {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends\"}"}}
+[info] i  functions[us-central1-sms-send]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[debug] [2022-02-20T05:13:57.519Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:13:58.522Z] Validating nodejs source
+[debug] [2022-02-20T05:13:59.904Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:13:59.904Z] Building nodejs source
+[debug] [2022-02-20T05:13:59.905Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:14:00.109Z] Definition for trigger sms.send changed from undefined to {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends"} {"metadata":{"emulator":{"name":"functions"},"message":"Definition for trigger sms.send changed from undefined to {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends\"}"}}
+[debug] [2022-02-20T05:14:02.106Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:14:02.207Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:14:03.216Z] Validating nodejs source
+[debug] [2022-02-20T05:14:04.596Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:14:04.596Z] Building nodejs source
+[debug] [2022-02-20T05:14:04.597Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:14:04.767Z] Definition for trigger sms.send changed from undefined to {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends"} {"metadata":{"emulator":{"name":"functions"},"message":"Definition for trigger sms.send changed from undefined to {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends\"}"}}
+[debug] [2022-02-20T05:14:17.920Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:14:18.923Z] Validating nodejs source
+[debug] [2022-02-20T05:14:20.218Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:14:20.218Z] Building nodejs source
+[debug] [2022-02-20T05:14:20.218Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:14:20.407Z] Definition for trigger sms.send changed from undefined to {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends"} {"metadata":{"emulator":{"name":"functions"},"message":"Definition for trigger sms.send changed from undefined to {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends\"}"}}
+[debug] [2022-02-20T05:15:39.074Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:15:40.077Z] Validating nodejs source
+[debug] [2022-02-20T05:15:42.177Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:15:42.178Z] Building nodejs source
+[debug] [2022-02-20T05:15:42.178Z] Analyzing nodejs backend spec
+[info] i  functions[us-central1-smsNotification]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[debug] [2022-02-20T05:16:13.729Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:16:14.731Z] Validating nodejs source
+[debug] [2022-02-20T05:16:16.054Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:16:16.054Z] Building nodejs source
+[debug] [2022-02-20T05:16:16.054Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:16:54.908Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:16:55.910Z] Validating nodejs source
+[debug] [2022-02-20T05:16:57.235Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:16:57.235Z] Building nodejs source
+[debug] [2022-02-20T05:16:57.235Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:17:11.854Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:17:12.857Z] Validating nodejs source
+[debug] [2022-02-20T05:17:14.249Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:17:14.249Z] Building nodejs source
+[debug] [2022-02-20T05:17:14.249Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:19:36.371Z] File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/cyp/projects/recommends-editor/functions/index.js changed, reloading triggers"}}
+[debug] [2022-02-20T05:19:37.373Z] Validating nodejs source
+[debug] [2022-02-20T05:19:38.724Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@pickk/sens": "^1.1.0",
+    "axios": "^0.26.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-sens": "^1.3.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-02-20T05:19:38.724Z] Building nodejs source
+[debug] [2022-02-20T05:19:38.724Z] Analyzing nodejs backend spec
+[debug] [2022-02-20T05:19:38.900Z] Definition for trigger smsNotification changed from {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends"} to {"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/univdev-recommends/databases/(default)/documents/recommends/{recommendId}"} {"metadata":{"emulator":{"name":"functions"},"message":"Definition for trigger smsNotification changed from {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends\"} to {\"eventType\":\"providers/cloud.firestore/eventTypes/document.create\",\"resource\":\"projects/univdev-recommends/databases/(default)/documents/recommends/{recommendId}\"}"}}
+[info] i  functions[us-central1-smsNotification]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
