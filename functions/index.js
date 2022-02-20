@@ -15,8 +15,8 @@ exports.smsNotification = functions.firestore.document('recommends/{recommendId}
     secretKey: process.env.SMS_SECRET_KEY,
     phoneNumber: process.env.CALLING_NUMBER,
   };
-  const updateAPI = `${process.env.API_BASE_URI}/recommendationAccept`;
-  const updateQuery = `?recommendId=${id}`;
+  // const updateAPI = `${process.env.API_BASE_URI}/recommendationAccept`;
+  // const updateQuery = `?recommendId=${id}`;
   const fs = admin.firestore();
   const doc = fs.collection('recommends').doc(id);
   doc.get().then((snapshot) => {
@@ -25,7 +25,7 @@ exports.smsNotification = functions.firestore.document('recommends/{recommendId}
       '칭찬이 새롭게 등록 되었습니다!',
       // `작성자: ${data.author}`,
       // `작성 내용: ${data.content}`,
-      `수락 URI: ${[updateAPI, updateQuery].join('')}`,
+      // `수락 URI: ${[updateAPI, updateQuery].join('')}`,
     ];
     functions.logger.log('SMS Prepended: ', { message: messageContent});
     const ncp = new NCPClient(clientPayload);
