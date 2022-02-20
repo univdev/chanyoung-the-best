@@ -4,6 +4,7 @@
   import { getFirestore, collection, query, where, orderBy, onSnapshot, addDoc } from 'firebase/firestore';
   import moment from 'moment';
   import Confetti from 'canvas-confetti';
+  import LoadingOverlay from './.components/LoadingOverlay.svelte';
   import Recommend from "./.components/Recommend.svelte";
   import RecommendEditor from './.components/RecommendEditor.svelte';
   import ConfirmModal from './.components/ConfirmModal.svelte';
@@ -15,6 +16,7 @@
   let isVisibleRecommendEditor = false;
   let isVisibleConfirmModal = false;
   let isVisibleCompleteModal = false;
+  let isLoading = true;
   const payload = {
     author: '',
     group: '',
@@ -30,8 +32,10 @@
       orderBy('createdAt', 'asc'),
     );
     return onSnapshot(q, (snapshot) => {
+      isLoading = true;
       const items = [...snapshot.docs].map((doc) => doc.data());
       recommends = [...items];
+      isLoading = false;
     });
   };
   const addRecommendation = ({ author, group, content }) => {
@@ -111,13 +115,13 @@
       origin: { x: 1 },
     });
     window.setTimeout(() => {
-      console.log(startTime);
       if (now <= endTime) showCompleteEffect(confetti, startTime, duration);
     }, 10);
   };
   onMount(() => {
     confettiCanvas = createConfettiCanvas();
     recommendsSubscriber = getRecommendsSubscriber();
+    console.log(firebase.app);
   });
   onDestroy(() => {
     if (recommendsSubscriber) recommendsSubscriber();
@@ -129,17 +133,30 @@
 	<title>찬영이를 칭찬해주세요!</title>
 </svelte:head>
 
+{#if isLoading}
+  <LoadingOverlay />
+{/if}
+
 <div class="recommends">
-  <ul class="list">
-    {#each recommends as recommend}
-      <li class="list__item">
-        <Recommend
-          author="{recommend.author}"
-          group="{recommend.group}"
-          content="{recommend.content}"/>
-      </li>
-    {/each}
-  </ul>
+  {#if recommends.length > 0}
+    <ul class="list">
+      {#each recommends as recommend}
+        <li class="list__item">
+          <Recommend
+            author="{recommend.author}"
+            group="{recommend.group}"
+            content="{recommend.content}"/>
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <div class="no-recommend">
+      <h4 class="no-recommend--title">추천사가 존재하지 않습니다...</h4>
+      <p class="no-recommend--description">
+        추천사를 작성해주세요!
+      </p>
+    </div>
+  {/if}
   <button
     type="button"
     class="paper-btn btn-secondary add-button"
@@ -174,6 +191,12 @@
   }
   .list .list__item {
     margin-bottom: 16px;
+  }
+  .no-recommend {
+    text-align: center;
+  }
+  .no-recommend .no-recommend--description {
+    margin-top: 8px;
   }
   .recommends :global(.add-button) {
     display: flex;
