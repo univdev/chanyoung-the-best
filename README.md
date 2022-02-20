@@ -20,6 +20,8 @@ Svelte를 기반으로 한 SSR 및 자동 라우트 기능을 지원하는 프�
 
 일단 개발자들이 사용해보면서 긍정적인 경험을 느꼈다고 한 것에는 이유가 있었을 것이고, 현업에 당장 적용하기 힘든 개발 방식에 대한 학습은 토이 프로젝트에서 진행하면서 하나씩 배워나가는게 좋을 것 같다고 생각되어 **굳이** 적용 해보게 되었습니다.
 ### Firebase를 사용하게 된 이유
+![Firebase][Firebase]
+
 Firebase는 꽤 예전부터 많은 개발자들의 개발 비용을 줄여준 유용한 Serverless 플랫폼입니다.  
 그럼에도 불구하고 회사에서 웹앱을 개발할 때 Push Notification이나 Dynamic Link 정도를 구현하기 위해서 사용 했던 것을 제외한다면 어차피 자체적으로 개발 된 백엔드 API를 사용했기 때문에 Firebase에 대해서 굳이 공부하려고 하지도 않았던 것 같습니다.
 
@@ -33,3 +35,4 @@ Firebase는 꽤 예전부터 많은 개발자들의 개발 비용을 줄여준 �
 
 [컨트리뷰터]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/%E1%84%8E%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%AB%E1%84%89%E1%85%A1_%E1%84%8F%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2%E1%84%90%E1%85%A5.png?alt=media&token=13f79482-f44c-454e-9d51-59c357926fde
 [Svelte]: ./svelte.png
+[Firebase]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/Firebase_Logo.png?alt=media&token=13a7c022-f5e0-4b27-8638-d855bb051d60
