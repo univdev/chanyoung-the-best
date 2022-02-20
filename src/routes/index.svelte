@@ -1,4 +1,59 @@
 <script>
+	import { onDestroy, onMount } from 'svelte';
+	import Confetti from 'canvas-confetti';
+
+	let particleHandler = null;
+	let confettiCanvas = null;
+	let canvas = null;
+	const createCanvas = () => {
+		const canvas = document.createElement('canvas');
+		canvas.setAttribute('id', 'ConfettiCanvas');
+    document.body.appendChild(canvas);
+		return canvas;
+	};
+	const createParticleCanvas = (canvas) => {
+		if (!canvas) throw new Error('canvas를 인자로 전달해주세요!');
+    const confetti = Confetti.create(canvas, {
+      resize: true,
+      useWorker: true,
+    });
+    return confetti;
+	};
+	const randomInRange = (min, max) => {
+  	return Math.random() * (max - min) + min;
+	}
+	const destroyParticleCanvas = (canvas) => {
+		// if (!canvas) throw new Error('canvas를 인자로 전달해주세요!');
+		canvas.remove();
+	};
+	const showParticle = (confetti) => {
+		if (!confetti) throw new Error('confetti 객체를 인자로 전달해주세요!');
+		confetti({
+			particleCount: 1,
+			startVelocity: 0,
+			origin: {
+				x: Math.random(),
+				// since particles fall down, skew start toward the top
+				y: (Math.random()) - 0.2
+			},
+			shapes: ['circle'],
+			gravity: randomInRange(0.4, 0.6),
+			scalar: randomInRange(0.4, 1),
+			drift: randomInRange(-0.4, 0.4)
+		});
+	};
+
+	onMount(() => {
+		canvas = createCanvas();
+		confettiCanvas = createParticleCanvas(canvas);
+		particleHandler = window.setInterval(() => {
+			showParticle(confettiCanvas);
+		}, 20);
+	});	
+	onDestroy(() => {
+		if (canvas) destroyParticleCanvas(canvas);
+		if (particleHandler) clearInterval(particleHandler);
+	});
 </script>
 
 <svelte:head>
@@ -7,7 +62,10 @@
 
 <div class="home">
 	<h1 class="home__title">찬영이를 칭찬해주세요!</h1>
-	<p class="home__description">칭찬이 많이 고픈 아이예요..!</p>
+	<p class="home__description">
+		박찬영과 함께한 그 어떤 경험이라도 괜찮으니<br/>
+		그것으로 인해 긍정적인 느낌을 느끼셨다면 누구나 추천사를 작성하실 수 있습니다!
+	</p>
 	<nav class="home__navigation navigation">
 		<a
 			class="paper-btn btn-secondary"
@@ -42,5 +100,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	:global(#ConfettiCanvas) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+		pointer-events: none;
 	}
 </style>
