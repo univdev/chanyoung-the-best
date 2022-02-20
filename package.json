@@ -18,8 +18,7 @@
     "moment": "^2.29.1",
     "papercss": "^1.8.3",
     "polka": "next",
-    "sirv": "^1.0.0",
-    "spaper": "^0.3.6"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
