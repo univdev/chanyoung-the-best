@@ -4,6 +4,7 @@
 	import Icon from 'mdi-svelte';
 	import { mdiGithub } from '@mdi/js';
 
+	let isCSR = false;
 	let particleHandler = null;
 	let confettiCanvas = null;
 	let canvas = null;
@@ -46,6 +47,7 @@
 	};
 
 	onMount(() => {
+		isCSR = true;
 		canvas = createCanvas();
 		confettiCanvas = createParticleCanvas(canvas);
 		particleHandler = window.setInterval(() => {
@@ -78,9 +80,10 @@
 			class="paper-btn btn-default navigations__item"
 			href="https://github.com/univdev"
 			target="_blank">
-			<Icon
-				class="navigation-icon"
-				path={mdiGithub} />
+			{#if isCSR}
+				<Icon
+					path="{mdiGithub}"/>
+			{/if}
 			<span>Github 방문하기</span>
 		</a>
 	</nav>
