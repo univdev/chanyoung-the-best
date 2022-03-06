@@ -1,9 +1,10 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount, onDestroy, tick } from 'svelte';
   import firebase from 'plugins/firebase';
   import { getFirestore, collection, query, where, orderBy, onSnapshot, addDoc } from 'firebase/firestore';
   import moment from 'moment';
   import Confetti from 'canvas-confetti';
+  import animateScrollTo from 'animated-scroll-to';
   import LoadingOverlay from './.components/LoadingOverlay.svelte';
   import Recommend from "./.components/Recommend.svelte";
   import RecommendEditor from './.components/RecommendEditor.svelte';
@@ -31,11 +32,16 @@
       where('isVisible', '==', true),
       orderBy('createdAt', 'asc'),
     );
-    return onSnapshot(q, (snapshot) => {
+    return onSnapshot(q, async (snapshot) => {
       isLoading = true;
-      const items = [...snapshot.docs].map((doc) => doc.data());
+      const items = [...snapshot.docs].map((doc) => {
+        const id = doc.id;
+        return { id, ...doc.data() };
+      });
       recommends = [...items];
       isLoading = false;
+      await tick();
+      scrollToTarget(getRedirectTarget());
     });
   };
   const addRecommendation = ({ author, group, content }) => {
@@ -118,10 +124,20 @@
       if (now <= endTime) showCompleteEffect(confetti, startTime, duration);
     }, 10);
   };
+  const getRedirectTarget = () => {
+    const currentLocation = window.location;
+    const hash = currentLocation.hash || null;
+    if (!hash) return null;
+    return window.document.querySelector(`.recommend${hash}`) || null;
+  };
+  const scrollToTarget = (target) => {
+    if (!target) return;
+    const top = target.offsetTop;
+    animateScrollTo.default(top);
+  };
   onMount(() => {
     confettiCanvas = createConfettiCanvas();
     recommendsSubscriber = getRecommendsSubscriber();
-    console.log(firebase.app);
   });
   onDestroy(() => {
     if (recommendsSubscriber) recommendsSubscriber();
@@ -143,6 +159,7 @@
       {#each recommends as recommend}
         <li class="list__item">
           <Recommend
+            id="{recommend.id}"
             author="{recommend.author}"
             group="{recommend.group}"
             content="{recommend.content}"/>

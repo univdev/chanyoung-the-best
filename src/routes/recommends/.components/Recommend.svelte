@@ -2,11 +2,12 @@
   export let author = '';
   export let group = '';
   export let content = '';
+  export let id = '';
 
   $: nl2brContent = content.split('\n').join('<br>');
 </script>
 
-<div class="recommend">
+<div class="recommend" id="{id}">
   <div class="card">
     <div class="card-body">
       <div class="card-title">{ author } 님</div>

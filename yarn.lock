@@ -1643,6 +1643,11 @@ agent-base@6:
   dependencies:
     debug "4"
 
+animated-scroll-to@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/animated-scroll-to/-/animated-scroll-to-2.2.0.tgz#0aea20d4d800e3e8bfd1504041091276f9593360"
+  integrity sha512-VVhwrii9tMXwP1GlQacLplUrh/0x2IbU/JxTUMBvzam6lJpJ9jMCw8PKHOvqMJ52vYmBDfcf9lNDuSeoWCD/mw==
+
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"

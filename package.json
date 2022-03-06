@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mdi/js": "^6.5.95",
+    "animated-scroll-to": "^2.2.0",
     "axios": "^0.26.0",
     "canvas-confetti": "^1.5.1",
     "compression": "^1.7.1",
