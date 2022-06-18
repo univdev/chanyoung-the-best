@@ -33,9 +33,6 @@ Firebase는 꽤 예전부터 많은 개발자들의 개발 비용을 줄여준 �
 - canvas-confetti
 - node-sens
 
-# 로드맵
-추천사 우선순위 결정
-
 [컨트리뷰터]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/%E1%84%8E%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%AB%E1%84%89%E1%85%A1_%E1%84%8F%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2%E1%84%90%E1%85%A5.png?alt=media&token=13f79482-f44c-454e-9d51-59c357926fde
 [Svelte]: ./svelte.png
 [Firebase]: https://firebasestorage.googleapis.com/v0/b/univdev-github-io.appspot.com/o/Firebase_Logo.png?alt=media&token=13a7c022-f5e0-4b27-8638-d855bb051d60
